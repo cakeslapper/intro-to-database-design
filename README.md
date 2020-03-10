@@ -9,3 +9,5 @@ Select data from the database
 - SELECT *column1, column2* FROM *table_name* WHERE *first_name* > 'Alice' **AND** last_name <= 'Log';
 - SELECT *column1, column2* FROM *table_name* WHERE *first_name* **LIKE** 'Al_ce';
 - SELECT *column1, column2* FROM *table_name* WHERE *first_name* LIKE 'Al%';
+- SELECT *column1, column2* FROM *table_name* WHERE *first_name* **BETWEEN** 'Alice' **AND** 'Mary';
+- SELECT *column1, column2* FROM *table_name* WHERE *first_name* **NOT** BETWEEN 'Joe' AND 'Leroy';
