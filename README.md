@@ -2,5 +2,6 @@
 SQL statements learned in my Intro to Database Design class
 
 ### Select
-*Syntax*
+Select data from the database
 - SELECT *column1, column2* FROM *table_name*;
+- SELECT *column1, column2* FROM *table_name* WHERE *first_name* = 'Alice';
