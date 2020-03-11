@@ -19,10 +19,10 @@ SQL statements learned in my Intro to Database Design class
 ### Create Tablespace
 ###### Storage location where actual data can be kept
 
-**CREATE TABLESPACE** *tablespace_name*
+```**CREATE TABLESPACE** *tablespace_name*
 
 **DATAFILE** *'c:\users\me\oracle\test_tablespace.dbf'*
 
 **SIZE** *50M*
 
-**AUTOEXTEND** *ON NEXT 10M MAXSIZE 250M*;
+**AUTOEXTEND** *ON NEXT 10M MAXSIZE 250M*;```
