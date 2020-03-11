@@ -35,6 +35,9 @@ SQL statements learned in my Intro to Database Design class
       CREATE TABLE TestTable AS
       SELECT customername, contactname
       FROM customers;
+###### Drop an existing table
+      DROP TABLE table_name;
+      
 ---
 ### Tablespace
 ###### Storage location where actual data can be kept
