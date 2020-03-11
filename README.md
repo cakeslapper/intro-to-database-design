@@ -4,6 +4,11 @@ SQL statements learned in my Intro to Database Design class
 ## Table of Contents
 - [Select](#Select)
 - [Table](#Table)
+   - [Create](#Create)
+   - [Copy](#Copy)
+   - [Drop](#Drop)
+   - [Insert](#Insert)
+   - [Delete from](#Delete)
 - [Tablespace](#Tablespace)
 ### Select
 ###### Select data from the database
