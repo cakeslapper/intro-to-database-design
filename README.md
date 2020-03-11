@@ -14,3 +14,4 @@ Select data from the database
 - SELECT *first_name* **AS** "first", *last_name* **AS** "last" FROM *employee*;
 - SELECT **DISTINCT** *first_name* FROM *students*;
 - SELECT *first_name*, *last_name* FROM *employee* **ORDER BY** *last_name* **ASC**, *first_name* **DESC**;
+- SELECT *first_name*, *salary* FROM employee WHERE salary **IS NULL** OR last_name **IS NOT NULL**;
