@@ -19,6 +19,7 @@ SQL statements learned in my Intro to Database Design class
 ### Table
 ###### Create a table
 - **CREATE TABLE** *table_name* (*data* *data_type*);
+
       CREATE TABLE Person (
 
       PersonID number(10),
