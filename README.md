@@ -12,4 +12,4 @@ Select data from the database
 - SELECT *column1, column2* FROM *table_name* WHERE *first_name* **NOT** BETWEEN 'Joe' AND 'Leroy';
 - SELECT *first_name* FROM *students* WHERE *age* **IN (5, 15, 20)**;
 
-- SELECT *first_name* **AS** *first*, *last_name* **AS** *last* FROM *employee*;
+- SELECT *first_name* **AS** "first", *last_name* **AS** "last" FROM *employee*;
