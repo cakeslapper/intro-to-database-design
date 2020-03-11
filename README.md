@@ -52,31 +52,31 @@ SQL statements learned in my Intro to Database Design class
 ---
 ### Select
 ###### Select data from the database
-- **SELECT FROM**
-- **WHERE**
-- **> < <> >= <= != =**
-- **AND** / **OR**
-- **LIKE**
-- **BETWEEN**
-- **NOT**
-- **IN**
-- **AS**
-- **DISTINCT**
-- **ORDER BY** .. **ASC** / **DESC**
-- **IS NULL** / **IS NOT NULL**
+1. **SELECT FROM**
+2. **WHERE**
+3. **> < <> >= <= != =**
+4. **AND** / **OR**
+5. **LIKE**
+6. **BETWEEN**
+7. **NOT**
+8. **IN**
+9. **AS**
+10. **DISTINCT**
+11. **ORDER BY** .. **ASC** / **DESC**
+12. **IS NULL** / **IS NOT NULL**
 
-      SELECT column1, column2 FROM table_name;
-      SELECT column1, column2 FROM table_name WHERE first_name = 'Alice';
-      SELECT column1, column2 FROM table_name WHERE first_name != 'Alice';
-      SELECT column1, column2 FROM table_name WHERE first_name > 'Alice' AND last_name <= 'Log';
-      SELECT column1, column2 FROM table_name WHERE first_name LIKE 'Al_ce' OR first_name LIKE 'Al%';
-      SELECT column1, column2 FROM table_name WHERE first_name BETWEEN 'Alice' AND 'Mary';
-      SELECT column1, column2 FROM table_name WHERE first_name NOT BETWEEN 'Joe' AND 'Leroy';
-      SELECT first_name FROM students WHERE age IN (5, 15, 20);
-      SELECT first_name AS "first", last_name AS "last" FROM employee;
-      SELECT DISTINCT first_name FROM students;
-      SELECT first_name, last_name FROM employee ORDER BY last_name ASC, first_name DESC;
-      SELECT first_name, salary FROM employee WHERE salary IS NULL OR last_name IS NOT NULL;
+         1. SELECT column1, column2 FROM table_name;
+         2. SELECT column1, column2 FROM table_name WHERE first_name = 'Alice';
+         3. SELECT column1, column2 FROM table_name WHERE first_name != 'Alice';
+         4. SELECT column1, column2 FROM table_name WHERE first_name > 'Alice' AND last_name <= 'Log';
+         5. SELECT column1, column2 FROM table_name WHERE first_name LIKE 'Al_ce' OR first_name LIKE 'Al%';
+         6. SELECT column1, column2 FROM table_name WHERE first_name BETWEEN 'Alice' AND 'Mary';
+         7. SELECT column1, column2 FROM table_name WHERE first_name NOT BETWEEN 'Joe' AND 'Leroy';
+         8. SELECT first_name FROM students WHERE age IN (5, 15, 20);
+         9. SELECT first_name AS "first", last_name AS "last" FROM employee;
+         10. SELECT DISTINCT first_name FROM students;
+         11. SELECT first_name, last_name FROM employee ORDER BY last_name ASC, first_name DESC;
+         12. SELECT first_name, salary FROM employee WHERE salary IS NULL OR last_name IS NOT NULL;
 ---
 ### Tablespace
 ###### Create Tablespace (storage location where actual data can be kept)
