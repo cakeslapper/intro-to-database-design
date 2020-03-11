@@ -50,18 +50,19 @@ SQL statements learned in my Intro to Database Design class
       CREATE TABLE TestTable AS
       SELECT customername, contactname
       FROM customers;
+---
 #### Drop
 ###### Drop an existing table
 - **DROP TABLE** *table_name*;
 
       DROP TABLE table_name;
-      
+---
 #### Insert
 ###### Insert records into an existing table
 - **INSERT INTO** *table_name* **VALUES** *(val1, val2, val3, ...)*;
 
       INSERT INTO Persons VALUES (101, 'Person1', 'LastName1', '123 Main St.', 'Manchester');
-      
+---
 #### Delete
 ###### Delete existing records from an existing table
 - **DELETE FROM** *table_name* **WHERE** *PersonID = 101*;
