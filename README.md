@@ -16,6 +16,22 @@ SQL statements learned in my Intro to Database Design class
 - SELECT *first_name*, *last_name* FROM *employee* **ORDER BY** *last_name* **ASC**, *first_name* **DESC**;
 - SELECT *first_name*, *salary* FROM employee WHERE salary **IS NULL** OR last_name **IS NOT NULL**;
 
+### Table
+###### Create a table
+**CREATE TABLE** Person (
+
+   PersonID number(10),
+    
+   LastName varchar(255),
+    
+   FirstName varchar(255),
+    
+   Address varchar(255),
+    
+   City varchar(255)
+);
+
+---
 ### Tablespace
 ###### Storage location where actual data can be kept
 - Create Tablespace
