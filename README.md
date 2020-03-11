@@ -34,13 +34,7 @@ SQL statements learned in my Intro to Database Design class
 
       PersonID number(10),
 
-      LastName varchar(255),
-
-      FirstName varchar(255),
-
-      Address varchar(255),
-
-      City varchar(255)
+      LastName varchar2(255),
 
       );
 ---
