@@ -26,7 +26,7 @@ SQL statements learned in my Intro to Database Design class
 - SELECT *first_name*, *salary* FROM *employee* WHERE *salary* **IS NULL** OR *last_name* **IS NOT NULL**;
 
 ### Table
-##### Create
+#### Create
 ###### Create a table
 - **CREATE TABLE** *table_name* (*data* *data_type*);
 
@@ -43,22 +43,26 @@ SQL statements learned in my Intro to Database Design class
       City varchar(255)
 
       );
+#### Copy
 ###### Copy from an existing table
 - **CREATE TABLE** *table_name* **AS** **SELECT** *columns* **FROM** *existing_table*
 
       CREATE TABLE TestTable AS
       SELECT customername, contactname
       FROM customers;
+#### Drop
 ###### Drop an existing table
 - **DROP TABLE** *table_name*;
 
       DROP TABLE table_name;
       
+#### Insert
 ###### Insert records into an existing table
 - **INSERT INTO** *table_name* **VALUES** *(val1, val2, val3, ...)*;
 
       INSERT INTO Persons VALUES (101, 'Person1', 'LastName1', '123 Main St.', 'Manchester');
       
+#### Delete
 ###### Delete existing records from an existing table
 - **DELETE FROM** *table_name* **WHERE** *PersonID = 101*;
 
