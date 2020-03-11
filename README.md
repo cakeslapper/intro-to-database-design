@@ -1,6 +1,10 @@
 # intro-to-database-design
 SQL statements learned in my Intro to Database Design class
 
+## Table of Contents
+- [Select](#Select)
+- [Table](#Table)
+- [Tablespace](#Tablespace)
 ### Select
 ###### Select data from the database
 - **SELECT** *column1, column2* **FROM** *table_name*;
