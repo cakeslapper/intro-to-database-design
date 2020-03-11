@@ -18,7 +18,7 @@ SQL statements learned in my Intro to Database Design class
 
 ### Tablespace
 ###### Storage location where actual data can be kept
-
+- Create Tablespace
    **CREATE TABLESPACE** *tablespace_name*
 
    **DATAFILE** *'c:\users\me\oracle\test_tablespace.dbf'*
