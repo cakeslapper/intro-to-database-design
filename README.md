@@ -49,7 +49,7 @@ SQL statements learned in my Intro to Database Design class
 ###### Create Tablespace (storage location where actual data can be kept_
 - **CREATE TABLESPACE** *name* **DATAFILE** *db_file_name_and_location* **SIZE** *size* **AUTOEXTEND** *yes/no*
 
-      CREATE TABLESPACE tablespace_name*
+      CREATE TABLESPACE tablespace_name
       
       DATAFILE 'c:\users\me\oracle\test_tablespace.dbf'
 
