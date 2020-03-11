@@ -18,18 +18,19 @@ SQL statements learned in my Intro to Database Design class
 
 ### Table
 ###### Create a table
-**CREATE TABLE** Person (
+      CREATE TABLE Person (
 
-   PersonID number(10),
-    
-   LastName varchar(255),
-    
-   FirstName varchar(255),
-    
-   Address varchar(255),
-    
-   City varchar(255)
-);
+      PersonID number(10),
+
+      LastName varchar(255),
+
+      FirstName varchar(255),
+
+      Address varchar(255),
+
+      City varchar(255)
+
+      );
 
 ---
 ### Tablespace
