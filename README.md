@@ -31,7 +31,10 @@ SQL statements learned in my Intro to Database Design class
       City varchar(255)
 
       );
-
+###### Copy from an existing table
+      CREATE TABLE TestTable AS
+      SELECT customername, contactname
+      FROM customers;
 ---
 ### Tablespace
 ###### Storage location where actual data can be kept
