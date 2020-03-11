@@ -40,6 +40,8 @@ SQL statements learned in my Intro to Database Design class
       SELECT customername, contactname
       FROM customers;
 ###### Drop an existing table
+- **DROP TABLE** *table_name*;
+
       DROP TABLE table_name;
       
 ---
