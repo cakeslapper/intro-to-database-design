@@ -24,7 +24,7 @@ SQL statements learned in my Intro to Database Design class
 - SELECT **DISTINCT** *first_name* FROM *students*;
 - SELECT *first_name*, *last_name* FROM *employee* **ORDER BY** *last_name* **ASC**, *first_name* **DESC**;
 - SELECT *first_name*, *salary* FROM *employee* WHERE *salary* **IS NULL** OR *last_name* **IS NOT NULL**;
-
+---
 ### Table
 #### Create
 ###### Create a table
@@ -43,6 +43,7 @@ SQL statements learned in my Intro to Database Design class
       City varchar(255)
 
       );
+---
 #### Copy
 ###### Copy from an existing table
 - **CREATE TABLE** *table_name* **AS** **SELECT** *columns* **FROM** *existing_table*
