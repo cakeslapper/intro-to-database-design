@@ -2,7 +2,7 @@
 SQL statements learned in my Intro to Database Design class
 
 ### Select
-Select data from the database
+#########Select data from the database
 - **SELECT** *column1, column2* **FROM** *table_name*;
 - SELECT *column1, column2* FROM *table_name* **WHERE** *first_name* = 'Alice';
 - SELECT *column1, column2* FROM *table_name* WHERE *first_name* **!=** 'Alice';
@@ -17,8 +17,12 @@ Select data from the database
 - SELECT *first_name*, *salary* FROM employee WHERE salary **IS NULL** OR last_name **IS NOT NULL**;
 
 ### Create Tablespace
-Storage location where actual data can be kept
+#########Storage location where actual data can be kept
+
 CREATE TABLESPACE *tablespace_name*
+
 datafile *'c:\users\me\oracle\test_tablespace.dbf'*
+
 size *50M*
+
 autoextend *on next 10M maxsize 250M*;
