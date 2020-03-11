@@ -18,6 +18,7 @@ SQL statements learned in my Intro to Database Design class
 
 ### Table
 ###### Create a table
+- **CREATE TABLE** *table_name* (*data* *data_type*);
       CREATE TABLE Person (
 
       PersonID number(10),
@@ -32,6 +33,7 @@ SQL statements learned in my Intro to Database Design class
 
       );
 ###### Copy from an existing table
+- CREATE TABLE *table_name* **AS** **SELECT** *columns* **FROM** *existing_table*
       CREATE TABLE TestTable AS
       SELECT customername, contactname
       FROM customers;
