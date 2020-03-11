@@ -1,4 +1,4 @@
-# intro-to-database-design
+# intro-to-database-design-sql-commands
 SQL statements learned in my Intro to Database Design class
 
 ## Table of Contents
