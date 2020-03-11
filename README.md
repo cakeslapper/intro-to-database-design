@@ -46,7 +46,7 @@ SQL statements learned in my Intro to Database Design class
       
 ---
 ### Tablespace
-###### Create Tablespace (storage location where actual data can be kept_
+###### Create Tablespace (storage location where actual data can be kept)
 - **CREATE TABLESPACE** *name* **DATAFILE** *db_file_name_and_location* **SIZE** *size* **AUTOEXTEND** *yes/no*
 
       CREATE TABLESPACE tablespace_name
