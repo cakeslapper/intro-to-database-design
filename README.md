@@ -15,3 +15,10 @@ Select data from the database
 - SELECT **DISTINCT** *first_name* FROM *students*;
 - SELECT *first_name*, *last_name* FROM *employee* **ORDER BY** *last_name* **ASC**, *first_name* **DESC**;
 - SELECT *first_name*, *salary* FROM employee WHERE salary **IS NULL** OR last_name **IS NOT NULL**;
+
+### Create Tablespace
+Storage location where actual data can be kept
+CREATE TABLESPACE *tablespace_name*
+datafile *'c:\users\me\oracle\test_tablespace.dbf'*
+size *50M*
+autoextend *on next 10M maxsize 250M*;
