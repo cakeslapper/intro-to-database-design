@@ -35,6 +35,7 @@ SQL statements learned in my Intro to Database Design class
       );
 ###### Copy from an existing table
 - CREATE TABLE *table_name* **AS** **SELECT** *columns* **FROM** *existing_table*
+
       CREATE TABLE TestTable AS
       SELECT customername, contactname
       FROM customers;
