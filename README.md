@@ -26,6 +26,7 @@ SQL statements learned in my Intro to Database Design class
 - SELECT *first_name*, *salary* FROM *employee* WHERE *salary* **IS NULL** OR *last_name* **IS NOT NULL**;
 
 ### Table
+##### Create
 ###### Create a table
 - **CREATE TABLE** *table_name* (*data* *data_type*);
 
