@@ -7,7 +7,7 @@ SQL statements learned in my Intro to Database Design class
    - [Copy](#Copy)
    - [Drop](#Drop)
    - [Insert](#Insert)
-   - [Insert Select](InsertSelect)
+      - [Insert Select](#InsertSelect)
    - [Delete from](#Delete)
    - [Alter](#Alter)
 - [Select](#Select)
