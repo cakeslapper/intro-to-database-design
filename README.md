@@ -54,13 +54,18 @@ SQL statements learned in my Intro to Database Design class
       DELETE FROM Persons WHERE PersonID = 101;
 ---
 ### Alter
-######  Add, delete or modify columns in an existing table / add and drop various constraints on an existing table
+######  Add, delete or modify columns in an existing table/add and drop various constraints on an existing table
 - **ALTER TABLE** table_name **DROP** column_name;
 - **ALTER TABLE** table_name **ADD** column_name datatype;
+- **ALTER TABLE** table_name **MODIFY** column_name datatype;
+- **ALTER TABLE** table_name **RENAME COLUMN** column_name **TO** new_column_name;
+
 
       ALTER TABLE Persons DROP (PID, DOB);
       ALTER TABLE Persons ADD (Email varchar2(255), DOB date);
       ALTER TABLE Persons ADD Email varchar2(255);
+      ALTER TABLE Persons MODIFY DOB varchar2(12);
+      ALTER TABLE Persons RENAME COLUMN DOB TO DataOfBirth;
 ---
 ### Select
 ###### Select data from the database
