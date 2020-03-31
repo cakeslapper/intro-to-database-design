@@ -7,6 +7,7 @@ SQL statements learned in my Intro to Database Design class
    - [Copy](#Copy)
    - [Drop](#Drop)
    - [Insert](#Insert)
+   - [Update](#Update)
    - [Delete from](#Delete)
    - [Alter](#Alter)
 - [Select](#Select)
@@ -50,6 +51,14 @@ SQL statements learned in my Intro to Database Design class
 
 ######  Copy _some_ data from one table and insert it into a second table by using a mix of select and insert statements
 - **INSERT INTO** employee_salary_Info **SELECT** employee_id, first_name, last_name, salary **FROM** employee;
+---
+#### Update
+######  Change existing rows either by adding new data or modifying existing data. It can be used to add values where there was a NULL, fix spelling mistakes, etc
+- **UPDAT**E table_name **SET** column1 = value1, column2 = value2, ... **WHERE** condition;
+
+      UPDATE Employee SET salary = 25000 WHERE salary < 25000;
+      UPDATE Employee SET salary = salary + 25000 WHERE salary < 25000;
+      UPDATE Employee SET salary = 50000 WHERE salary IS NULL;
 ---
 #### Delete
 ###### Delete existing records from an existing table
