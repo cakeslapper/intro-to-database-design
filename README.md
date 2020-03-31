@@ -9,6 +9,7 @@ SQL statements learned in my Intro to Database Design class
    - [Insert](#Insert)
    - [Delete from](#Delete)
 - [Select](#Select)
+- [Constraints](#Constraints)
 - [Tablespace](#Tablespace)
 
 ### Table
