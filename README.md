@@ -85,6 +85,20 @@ SQL statements learned in my Intro to Database Design class
 - **Primary key**: by default, primary keys must be unique and not null
 - **Foreign key**: must be a primary key in another table
 - **Default** (not really a constraint): assigns a default value if no value is given
+###### Unnamed
+      CREATE TABLE Persons (
+      PersonID int PRIMARY KEY,
+      LastName varchar(255) NOT NULL UNIQUE,
+      FirstName varchar(255),
+      Address varchar(255),
+      City varchar(255),
+      Country varchar(50) DEFAULT 'USA',
+      Balance number DEFAULT 100
+      );
+###### Named
+      PersonID int CONSTRAINT person_pk PRIMARY KEY
+###### Table level constraints
+      CONSTRAINT constraintName PRIMARY KEY (columnNames)
 ---
 ### Select
 ###### Select data from the database
