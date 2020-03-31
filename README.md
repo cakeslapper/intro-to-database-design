@@ -7,7 +7,6 @@ SQL statements learned in my Intro to Database Design class
    - [Copy](#Copy)
    - [Drop](#Drop)
    - [Insert](#Insert)
-      - [Insert Select](#InsertSelect)
    - [Delete from](#Delete)
    - [Alter](#Alter)
 - [Select](#Select)
@@ -46,12 +45,11 @@ SQL statements learned in my Intro to Database Design class
 - **INSERT INTO** *table_name* **VALUES** *(val1, val2, val3, ...)*;
 
       INSERT INTO Persons VALUES (101, 'Person1', 'LastName1', '123 Main St.', 'Manchester');
----
-#### InsertSelect
-######  Copy all data from one table and insert it into a second table by using a mix of select and insert statements
+######  Copy _all_ data from one table and insert it into a second table by using a mix of select and insert statements
 - **INSERT INTO** employee_copy **SELECT** * **FROM** employee;
 
-      INSERT INTO Persons VALUES (101, 'Person1', 'LastName1', '123 Main St.', 'Manchester');
+######  Copy _some_ data from one table and insert it into a second table by using a mix of select and insert statements
+- **INSERT INTO** employee_salary_Info **SELECT** employee_id, first_name, last_name, salary **FROM** employee;
 ---
 #### Delete
 ###### Delete existing records from an existing table
