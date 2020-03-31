@@ -54,7 +54,7 @@ SQL statements learned in my Intro to Database Design class
 ---
 #### Update
 ######  Change existing rows either by adding new data or modifying existing data. It can be used to add values where there was a NULL, fix spelling mistakes, etc
-- **UPDAT**E table_name **SET** column1 = value1, column2 = value2, ... **WHERE** condition;
+- **UPDATE** table_name **SET** column1 = value1, column2 = value2, ... **WHERE** condition;
 
       UPDATE Employee SET salary = 25000 WHERE salary < 25000;
       UPDATE Employee SET salary = salary + 25000 WHERE salary < 25000;
