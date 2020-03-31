@@ -86,6 +86,7 @@ SQL statements learned in my Intro to Database Design class
 - **Primary key**: by default, primary keys must be unique and not null
 - **Foreign key**: must be a primary key in another table
 - **Default** (not really a constraint): assigns a default value if no value is given
+- **Check**: used to limit the value range that can be placed in a column
 ###### Unnamed
       CREATE TABLE Persons (
       PersonID int PRIMARY KEY,
@@ -94,25 +95,34 @@ SQL statements learned in my Intro to Database Design class
       Address varchar(255),
       City varchar(255),
       Country varchar(50) DEFAULT 'USA',
-      Balance number DEFAULT 100
+      Balance number DEFAULT 100,
+      Age int CHECK (Age>=18)
       );
 ###### Named
       PersonID int CONSTRAINT person_pk PRIMARY KEY
 ###### Table level constraints
+      CONSTRAINT age_limit CHECK (Age>=18),
+      CONSTRAINT check_age_city CHECK (Age>=18 AND City=‘Manchester'),
+      CONSTRAINT salary_date CHECK (HireDate > ‘01-Jan-2010’ OR Salary > 5000),
+      CONSTRAINT PID_Valid CHECK (PID LIKE ‘@%’),
       CONSTRAINT constraintName PRIMARY KEY (columnNames),
       CONSTRAINT fk_emp_dept FOREIGN KEY (department_id) REFERENCES department(department_id)
 ---
-### Select
-###### Select data from the database
+### Alter Table
+######  used to add, delete or modify columns in an existing table / add and drop various constraints on an existing table
 - **DELETE FROM** *table_name* **WHERE** *PersonID = 101*;
 ---
 ### Select
 ###### Select data from the database
-- **DELETE FROM** *table_name* **WHERE** *PersonID = 101*;
+- **ALTER TABLE** table_name **ADD** column_name datatype;
 ---
 ### Select
 ###### Select data from the database
 - **DELETE FROM** *table_name* **WHERE** *PersonID = 101*;
+- **ALTER TABLE** table_name **DROP** column_name;
+      ALTER TABLE Persons DROP (PID, DOB);
+      ALTER TABLE Persons ADD (Email varchar2(255), DOB date);
+      ALTER TABLE Persons ADD Email varchar2(255);
 ---
 ### Select
 ###### Select data from the database
