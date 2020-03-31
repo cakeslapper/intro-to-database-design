@@ -10,6 +10,7 @@ SQL statements learned in my Intro to Database Design class
    - [Delete from](#Delete)
 - [Select](#Select)
 - [Constraints](#Constraints)
+- [Alter Table](#Alter)
 - [Tablespace](#Tablespace)
 
 ### Table
