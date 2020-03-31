@@ -57,6 +57,7 @@ SQL statements learned in my Intro to Database Design class
 ######  Add, delete or modify columns in an existing table / add and drop various constraints on an existing table
 - **ALTER TABLE** table_name **DROP** column_name;
 - **ALTER TABLE** table_name **ADD** column_name datatype;
+
       ALTER TABLE Persons DROP (PID, DOB);
       ALTER TABLE Persons ADD (Email varchar2(255), DOB date);
       ALTER TABLE Persons ADD Email varchar2(255);
