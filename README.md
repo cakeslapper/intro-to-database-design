@@ -8,7 +8,7 @@ SQL statements learned in my Intro to Database Design class
    - [Drop](#Drop)
    - [Insert](#Insert)
    - [Delete from](#Delete)
-   - [Alter Table](#Alter)
+   - [Alter](#Alter)
 - [Select](#Select)
 - [Constraints](#Constraints)
 - [Alter Table](#Alter)
@@ -117,20 +117,6 @@ SQL statements learned in my Intro to Database Design class
       CONSTRAINT PID_Valid CHECK (PID LIKE ‘@%’),
       CONSTRAINT constraintName PRIMARY KEY (columnNames),
       CONSTRAINT fk_emp_dept FOREIGN KEY (department_id) REFERENCES department(department_id)
----
-### Select
-###### Select data from the database
-
----
-### Select
-###### Select data from the database
-- **DELETE FROM** *table_name* **WHERE** *PersonID = 101*;
-
-
----
-### Select
-###### Select data from the database
-- **DELETE FROM** *table_name* **WHERE** *PersonID = 101*;
 ---
 ### Tablespace
 ###### Create Tablespace (storage location where actual data can be kept)
