@@ -78,6 +78,30 @@ SQL statements learned in my Intro to Database Design class
          11. SELECT first_name, last_name FROM employee ORDER BY last_name ASC, first_name DESC;
          12. SELECT first_name, salary FROM employee WHERE salary IS NULL OR last_name IS NOT NULL;
 ---
+### CONSTRAINTS
+###### Column constraints
+- **Not null**: the column must have a value
+- **Unique**: no two rows could have the same value for that column
+- **Primary key**: by default, primary keys must be unique and not null
+- **Foreign key**: must be a primary key in another table
+- **Default** (not really a constraint): assigns a default value if no value is given
+---
+### Select
+###### Select data from the database
+- **DELETE FROM** *table_name* **WHERE** *PersonID = 101*;
+---
+### Select
+###### Select data from the database
+- **DELETE FROM** *table_name* **WHERE** *PersonID = 101*;
+---
+### Select
+###### Select data from the database
+- **DELETE FROM** *table_name* **WHERE** *PersonID = 101*;
+---
+### Select
+###### Select data from the database
+- **DELETE FROM** *table_name* **WHERE** *PersonID = 101*;
+---
 ### Tablespace
 ###### Create Tablespace (storage location where actual data can be kept)
 - **CREATE TABLESPACE** *name* **DATAFILE** *db_file_name_and_location* **SIZE** *size* **AUTOEXTEND** *yes/no*
