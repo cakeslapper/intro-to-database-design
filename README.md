@@ -98,7 +98,8 @@ SQL statements learned in my Intro to Database Design class
 ###### Named
       PersonID int CONSTRAINT person_pk PRIMARY KEY
 ###### Table level constraints
-      CONSTRAINT constraintName PRIMARY KEY (columnNames)
+      CONSTRAINT constraintName PRIMARY KEY (columnNames),
+      CONSTRAINT fk_emp_dept FOREIGN KEY (department_id) REFERENCES department(department_id)
 ---
 ### Select
 ###### Select data from the database
