@@ -94,6 +94,10 @@ SQL statements learned in my Intro to Database Design class
 10. **DISTINCT**
 11. **ORDER BY** .. **ASC** / **DESC**
 12. **IS NULL** / **IS NOT NULL**
+13. **GROUP BY** - often used with COUNT, MAX, MIN, SUM, AVG (aggregate functions)
+14. **COUNT()** -  returns the _number_ of rows that matches a specified criteria
+15. **AVG()** - returns the average of a numeric column
+16. **SUM()** - returns the total sum of a numeric column.
 
          1. SELECT column1, column2 FROM table_name;
          2. SELECT column1, column2 FROM table_name WHERE first_name = 'Alice';
@@ -107,6 +111,13 @@ SQL statements learned in my Intro to Database Design class
          10. SELECT DISTINCT first_name FROM students;
          11. SELECT first_name, last_name FROM employee ORDER BY last_name ASC, first_name DESC;
          12. SELECT first_name, salary FROM employee WHERE salary IS NULL OR last_name IS NOT NULL;
+         13. SELECT customer_id FROM customer_order GROUP BY customer_id; 
+            SELECT Customer_id, COUNT(Customer_Id) FROM Customer_Order GROUP BY Customer_id ORDER BY COUNT(Customer_id);
+         14. SELECT COUNT(column_name) FROM table_name WHERE condition;
+            SELECT COUNT(*) FROM Customer_Order; SELECT COUNT(Distinct Customer_Id) FROM Customer_Order;
+         15. SELECT AVG(column_name) FROM table_name WHERE condition;
+         16. SELECT SUM(column_name) FROM table_name WHERE condition;
+
 ---
 ### CONSTRAINTS
 ###### Column constraints
