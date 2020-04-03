@@ -94,7 +94,7 @@ SQL statements learned in my Intro to Database Design class
 10. **DISTINCT**
 11. **ORDER BY** .. **ASC** / **DESC**
 12. **IS NULL** / **IS NOT NULL**
-13. **GROUP BY** - often used with aggregate functions below, "groups"/displays by distinct column(s)
+13. **GROUP BY** - often used with aggregate functions below, "groups"/displays by distinct column(s) & its related data
 14. **COUNT()** -  returns the _number_ of rows that matches a specified criteria
 15. **AVG()** - returns the _average_ of a numeric column
 16. **SUM()** - returns the _total sum_ of a numeric column.
