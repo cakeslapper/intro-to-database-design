@@ -13,7 +13,7 @@ SQL statements learned in my Intro to Database Design class
      - [Delete](#delete)
    - [Alter](#alter)
    - [Select](#select)
-   - [CONSTRAINTS](#constraints)
+   - [Constraints](#Constraints)
    - [Tablespace](#tablespace)
 
 ### Table
@@ -133,7 +133,7 @@ SELECT SUM(price) FROM product;
 SELECT department_id, SUM(price) FROM product GROUP BY department_id;
 ```
 ---
-### CONSTRAINTS
+### Constraints
 ###### Column constraints
 - **Not null**: the column must have a value
 - **Unique**: no two rows could have the same value for that column
