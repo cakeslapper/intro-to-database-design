@@ -14,10 +14,6 @@ SQL statements learned in my Intro to Database Design class
    - [Alter](#alter)
    - [Select](#select)
    - [CONSTRAINTS](#constraints)
-     - [Column constraints](#column-constraints)
-     - [Unnamed](#unnamed)
-     - [Named](#named)
-     - [Table level constraints](#table-level-constraints)
    - [Tablespace](#tablespace)
 
 ### Table
