@@ -1,7 +1,6 @@
 # Intro to Database Design SQL
 SQL statements learned in my Intro to Database Design class
 
-- [Intro to Database Design SQL](#intro-to-database-design-sql)
   * [Table of Contents](#table-of-contents)
     + [Table](#table)
       - [Create](#create)
@@ -11,24 +10,19 @@ SQL statements learned in my Intro to Database Design class
       - [Drop](#drop)
           + [Drop an existing table](#drop-an-existing-table)
       - [Insert](#insert)
-          + [Insert records into an existing table](#insert-records-into-an-existing-table)
-          + [Copy _all_ data from one table and insert it into a second table by using a mix of select and insert statements](#copy--all--data-from-one-table-and-insert-it-into-a-second-table-by-using-a-mix-of-select-and-insert-statements)
-          + [Copy _some_ data from one table and insert it into a second table by using a mix of select and insert statements](#copy--some--data-from-one-table-and-insert-it-into-a-second-table-by-using-a-mix-of-select-and-insert-statements)
+          + [Insert records](#insert-records-into-an-existing-table)
+          + [Copy_all_data_to_table](#copy--all--data-from-one-table-and-insert-it-into-a-second-table-by-using-a-mix-of-select-and-insert-statements)
+          + [Copy _some_ data to_table](#copy--some--data-from-one-table-and-insert-it-into-a-second-table-by-using-a-mix-of-select-and-insert-statements)
       - [Update](#update)
-          + [Change existing rows either by adding new data or modifying existing data. It can be used to add values where there was a NULL, fix spelling mistakes, etc](#change-existing-rows-either-by-adding-new-data-or-modifying-existing-data-it-can-be-used-to-add-values-where-there-was-a-null--fix-spelling-mistakes--etc)
       - [Delete](#delete)
-          + [Delete existing records from an existing table](#delete-existing-records-from-an-existing-table)
     + [Alter](#alter)
-          + [Add, delete or modify columns in an existing table/add and drop various constraints on an existing table](#add--delete-or-modify-columns-in-an-existing-table-add-and-drop-various-constraints-on-an-existing-table)
     + [Select](#select)
-          + [Select data from the database](#select-data-from-the-database)
     + [CONSTRAINTS](#constraints)
           + [Column constraints](#column-constraints)
           + [Unnamed](#unnamed)
           + [Named](#named)
           + [Table level constraints](#table-level-constraints)
     + [Tablespace](#tablespace)
-          + [Create Tablespace (storage location where actual data can be kept)](#create-tablespace--storage-location-where-actual-data-can-be-kept-)
 
 ### Table
 #### Create
