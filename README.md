@@ -18,7 +18,7 @@ SQL statements learned in my Intro to Database Design class
 #### Create
 ###### Create a table
 - **CREATE TABLE** *table_name* (*data* *data_type*);
-
+```sql
       CREATE TABLE Person (
 
       PersonID number(10),
@@ -26,6 +26,7 @@ SQL statements learned in my Intro to Database Design class
       LastName varchar2(255),
 
       );
+```
 ---
 #### Copy
 ###### Copy from an existing table
