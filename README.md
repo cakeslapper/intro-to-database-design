@@ -8,7 +8,6 @@ SQL statements learned in my Intro to Database Design class
      - [Drop](#drop)
      - [Insert](#insert)
          + [Copy all data to table](#copy-all-data-from-one-table-and-insert-it-into-a-second-table-by-using-a-mix-of-select-and-insert-statements)
-         + [Copy some data to table](#copy-some-data-from-one-table-and-insert-it-into-a-second-table-by-using-a-mix-of-select-and-insert-statements)
      - [Update](#update)
      - [Delete](#delete)
    - [Alter](#alter)
