@@ -120,17 +120,17 @@ ALTER TABLE Persons RENAME COLUMN DOB TO DataOfBirth;
 11. SELECT first_name, last_name FROM employee ORDER BY last_name ASC, first_name DESC;
 12. SELECT first_name, salary FROM employee WHERE salary IS NULL OR last_name IS NOT NULL;
 13. SELECT customer_id FROM customer_order GROUP BY customer_id;
-SELECT Customer_id, COUNT(Customer_Id) FROM Customer_Order GROUP BY Customer_id;
-SELECT Customer_id, COUNT(Customer_Id) FROM Customer_Order GROUP BY Customer_id ORDER BY COUNT(Customer_id);
+   SELECT Customer_id, COUNT(Customer_Id) FROM Customer_Order GROUP BY Customer_id;
+   SELECT Customer_id, COUNT(Customer_Id) FROM Customer_Order GROUP BY Customer_id ORDER BY COUNT(Customer_id);
 14. SELECT COUNT(column_name) FROM table_name WHERE condition;
-SELECT COUNT(*) FROM Customer_Order; 
-SELECT COUNT(Distinct Customer_Id) FROM Customer_Order;
+   SELECT COUNT(*) FROM Customer_Order; 
+   SELECT COUNT(Distinct Customer_Id) FROM Customer_Order;
 15. SELECT AVG(column_name) FROM table_name WHERE condition;
-SELECT AVG(Price) FROM Products;
-SELECT department_id, AVG(Price) FROM Products GROUP BY department_id;
+   SELECT AVG(Price) FROM Products;
+   SELECT department_id, AVG(Price) FROM Products GROUP BY department_id;
 16. SELECT SUM(column_name) FROM table_name WHERE condition;
-SELECT SUM(price) FROM product;
-SELECT department_id, SUM(price) FROM product GROUP BY department_id;
+   SELECT SUM(price) FROM product;
+   SELECT department_id, SUM(price) FROM product GROUP BY department_id;
 ```
 ---
 ### Constraints
