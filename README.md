@@ -104,6 +104,9 @@ ALTER TABLE Persons RENAME COLUMN DOB TO DataOfBirth;
 14. **COUNT()** -  returns the _number_ of rows that matches a specified criteria
 15. **AVG()** - returns the _average_ of a numeric column
 16. **SUM()** - returns the _total sum_ of a numeric column.
+17. **GROUP BY** on Multiple Columns -  finds the count of each first_group_col, second_group_col combination
+18.  **HAVING** - is similar to the WHERE clause but is used to filter rows _after_ the grouping is performed
+19.  **MIN** and **MAX** - can be used to find the smallest and largest value of a column, respectively
 
 ```sql
 1. SELECT column1, column2 FROM table_name;
@@ -130,6 +133,16 @@ ALTER TABLE Persons RENAME COLUMN DOB TO DataOfBirth;
 16. SELECT SUM(column_name) FROM table_name WHERE condition;
    SELECT SUM(price) FROM product;
    SELECT department_id, SUM(price) FROM product GROUP BY department_id;
+17. SELECT last_name, department_id, count(*) FROM employee GROUP BY last_name, department_id;
+   SELECT customer_id, product_id, count(*) FROM customer_order GROUP BY customer_id, product_id;
+18. SELECT column_name(s) FROM table_name WHERE condition GROUP BY column_name(s) HAVING condition ORDER BY column_name(s);
+   SELECT last_name, COUNT(*) FROM employee GROUP BY last_name HAVING COUNT(*) > 1;
+19. SELECT MIN(column_name) FROM table_name WHERE condition;
+   SELECT MAX(column_name) FROM table_name WHERE condition;
+   SELECT MAX(salary), MIN(salary) FROM employee;
+   SELECT department_id, max(salary) FROM employee GROUP BY department_id ORDER BY max(salary) desc;
+   SELECT MAX(hire_date), MIN(hire_date) FROM employee;
+   
 ```
 ---
 ### Constraints
