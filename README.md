@@ -142,6 +142,8 @@ ALTER TABLE Persons RENAME COLUMN DOB TO DataOfBirth;
    SELECT MAX(salary), MIN(salary) FROM employee;
    SELECT department_id, max(salary) FROM employee GROUP BY department_id ORDER BY max(salary) desc;
    SELECT MAX(hire_date), MIN(hire_date) FROM employee;
+   SELECT employee_id, hire_date FROM employee WHERE hire_date in (SELECT max(hire_date) FROM employee);
+   SELECT employee_id, hire_date FROM employee WHERE hire_date = (SELECT max(hire_date) FROM employee);
    
 ```
 ---
