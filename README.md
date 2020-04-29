@@ -107,6 +107,11 @@ ALTER TABLE Persons RENAME COLUMN DOB TO DataOfBirth;
 17. **GROUP BY** on Multiple Columns -  finds the count of each first_group_col, second_group_col combination
 18.  **HAVING** - is similar to the WHERE clause but is used to filter rows _after_ the grouping is performed
 19.  **MIN** and **MAX** - can be used to find the smallest and largest value of a column, respectively
+20. **INNER JOIN** or **JOIN** - only the rows where the column values match are returned; unmatched rows are discarded.
+21. **LEFT JOIN** or **LEFT OUTER JOIN** - specifies that all left outer rows be returned, even if right outer rows are null
+22. **RIGHT JOIN** or **RIGHT OUTER JOIN** - same as above but for the right
+23. **FULL JOIN** or **FULL OUTER JOIN** - a combination of a left and right joins
+24. **CROSS JOIN** - is a product combining two tables
 
 ```sql
 1. SELECT column1, column2 FROM table_name;
@@ -144,7 +149,20 @@ ALTER TABLE Persons RENAME COLUMN DOB TO DataOfBirth;
    SELECT MAX(hire_date), MIN(hire_date) FROM employee;
    SELECT employee_id, hire_date FROM employee WHERE hire_date in (SELECT max(hire_date) FROM employee);
    SELECT employee_id, hire_date FROM employee WHERE hire_date = (SELECT max(hire_date) FROM employee);
-   
+20. SELECT column_name(s) FROM table_1 INNER JOIN table_2 ON table_1.column_name = table_2.column_name;
+   SELECT first_name, last_name, department_name FROM employee JOIN department ON employee.department_id = department.department_id;
+   SELECT e.first_name, e.last_name, d.department_id, d.department_name, e.salary FROM employee e JOIN department d on e.department_id = d.department_id WHERE e.salary > 50000 ORDER BY e.salary asc;
+21. SELECT column_name(s) FROM table1 LEFT JOIN table2 ON table1.column_name = table2.column_name;
+   SELECT column_name(s) FROM table1 LEFT OUTER JOIN table2 ON table1.column_name = table2.column_name;
+   SELECT e.first_name, e.last_name, d.department_id, d.department_name FROM employee e LEFT JOIN department d ON e.department_id = d.department_id ORDER BY d.department_id desc;
+22. SELECT column_name(s) FROM table1 RIGHT JOIN table2 ON table1.column_name = table2.column_name;
+   SELECT column_name(s) FROM table1 RIGHT OUTER JOIN table2 ON table1.column_name = table2.column_name;
+23. SELECT column_name(s) FROM table1 FULL JOIN table2 ON table1.column_name = table2.column_name;
+   SELECT column_name(s) FROM table1 FULL OUTER JOIN table2 ON table1.column_name = table2.column_name;
+24. SELECT column_names FROM table1 CROSS JOIN table2;
+   SELECT column_names FROM table1, table2;
+   SELECT first_name, department_name FROM employee, department;
+   SELECT first_name, department_name FROM employee CROSS JOIN department;
 ```
 ---
 ### Constraints
